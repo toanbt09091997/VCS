@@ -1,0 +1,112 @@
+<div class="card">
+  <div class="card-header">
+    Advanced search
+  </div>
+  <form [formGroup]="formSearch">
+    <div class="card-body">
+      <div>
+        <div class="form-group row">
+          <label for="search" class="col-sm-2">Search: </label>
+          <div class="col-sm-8">
+            <input id="search" type="text" class="form-control"
+                   formControlName="search"/>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-1">
+            <input class="form-check-input" type="radio" name="firstName" id="exampleRadios1" value="{{model.firstName}}"
+                   formControlName="firstName"
+                   checked>
+          </div>
+          <label class="form-check-label col-sm-2 ml-sm-n5" for="exampleRadios1">
+            First Name
+          </label>
+          <div class="col-sm-1">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option1"
+            >
+          </div>
+          <label class="form-check-label col-sm-2 ml-sm-n5" for="exampleRadios2">
+            Last Name
+          </label>
+          <div class="col-sm-1">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option1"
+            >
+          </div>
+          <label class="form-check-label col-sm-2 ml-sm-n5" for="exampleRadios3">
+            Balance
+          </label>
+          <div class="col-sm-1">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option1"
+            >
+          </div>
+          <label class="form-check-label col-sm-2 ml-sm-n5" for="exampleRadios4">
+            Age
+          </label>
+
+        </div>
+
+        <div class="form-group row">
+          <div class="col-sm-1">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option1"
+            >
+          </div>
+          <label class="form-check-label col-sm-2 ml-sm-n5" for="exampleRadios5">
+            Gender
+          </label>
+
+
+          <div class="col-sm-1">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios6" value="option1"
+            >
+          </div>
+          <label class="form-check-label col-sm-2 ml-sm-n5" for="exampleRadios6">
+            Address
+          </label>
+
+
+          <div class="col-sm-1">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios7" value="option1"
+            >
+          </div>
+          <label class="form-check-label col-sm-2 ml-sm-n5" for="exampleRadios7">
+            Employer
+          </label>
+          <div class="col-sm-1">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios8" value="option1"
+            >
+          </div>
+          <label class="form-check-label col-sm-2 ml-sm-n5" for="exampleRadios8">
+            Email
+          </label>
+
+        </div>
+
+        <div class="form-group row">
+          <div class="col-sm-1">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios9" value="option1"
+            >
+          </div>
+          <label class="form-check-label col-sm-2 ml-sm-n5" for="exampleRadios9">
+            City
+          </label>
+          <div class="col-sm-1">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios10" value="option1"
+            >
+          </div>
+          <label class="form-check-label col-sm-2 ml-sm-n5" for="exampleRadios10">
+            State
+          </label>
+
+        </div>
+        <div class="card-footer">
+          <div class="text-right">
+            <button type="submit" class="btn btn-primary" autofocus (click)="search()"
+                    style="margin-right: 10px;">Save
+            </button>
+            <button type="button" class="btn btn-secondary" (click)="close()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
