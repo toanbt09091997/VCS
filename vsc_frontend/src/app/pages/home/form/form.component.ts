@@ -91,16 +91,16 @@ export class FormComponent implements OnInit {
     // });
   }
 
-  save(): void {
-    const data = this.converDataToSave();
-    this.spinnerService.show();
-    this.homeServiceService.updateAccount(data.account_number, data).pipe(finalize(() => {
-      this.spinnerService.hide();
-    })).subscribe(res => {
-        this.toastrService.success('Sửa thành công');
-        this.activeModal.close('OK');
-    });
-  }
+  // save(): void {
+  //   const data = this.converDataToSave();
+  //   this.spinnerService.show();
+  //   this.homeServiceService.updateAccount(data.account_number, data).pipe(finalize(() => {
+  //     this.spinnerService.hide();
+  //   })).subscribe(res => {
+  //       this.toastrService.success('Sửa thành công');
+  //       this.activeModal.close('OK');
+  //   });
+  // }
 
   converDataToSave() {
     let obj = new Object({
