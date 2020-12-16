@@ -29,3 +29,14 @@ frontend angular
 
 npm i
 npm start
+
+các chức năng: 
+đăng nhập
+get list phân trang
+xem chi tiết
+tạo mới
+update
+xóa
+các chức năng chưa thực hiện được:
+tìm kiếm
+tạo tài khoản
